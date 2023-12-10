@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Matrix" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-10T14:03:42" hostname="DESKTOP-4OO31M4" time="0.157">
+  <properties/>
+  <testcase name="Cofactor" classname="Matrix" time="0.157"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
