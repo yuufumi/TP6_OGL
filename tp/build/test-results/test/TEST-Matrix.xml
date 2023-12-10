@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Matrix" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-10T14:32:15" hostname="DESKTOP-E25QIIB" time="0.152">
+  <properties/>
+  <testcase name="Determinant" classname="Matrix" time="0.152"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
