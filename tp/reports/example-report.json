@@ -3,80 +3,35 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "",
+        "start_timestamp": "2023-12-17T09:40:52.473Z",
+        "line": 5,
+        "name": "Determinant",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2036100,
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "I have A Matrix",
-            "match": {
-              "location": "MatrixSteps.iHaveAMatrix()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-10T15:26:18.007Z",
-        "line": 7,
-        "name": "Transpose",
-        "description": "",
-        "id": "matrix;transpose",
+        "id": "matrix;determinant",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+              "duration": 4988300,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I compute transpose of",
+            "line": 6,
+            "name": "I have A Matrix",
             "match": {
-              "location": "MatrixSteps.iComputeTransposeOf(io.cucumber.datatable.DataTable)"
+              "location": "MatrixSteps.iHaveAMatrix()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "col1",
-                  "col2"
-                ]
-              },
-              {
-                "cells": [
-                  "1",
-                  "2"
-                ]
-              },
-              {
-                "cells": [
-                  "3",
-                  "4"
-                ]
-              },
-              {
-                "cells": [
-                  "5",
-                  "6"
-                ]
-              }
-            ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
+              "duration": 14162100,
               "status": "passed"
             },
-            "line": 13,
-            "name": "The result of transpose is",
+            "line": 7,
+            "name": "I compute determinant of",
             "match": {
-              "location": "MatrixSteps.iFindAsTransposeResult(io.cucumber.datatable.DataTable)"
+              "location": "MatrixSteps.iComputeDeterminantOf(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
@@ -89,78 +44,22 @@
               {
                 "cells": [
                   "1",
-                  "3",
-                  "5"
+                  "2",
+                  "3"
                 ]
               },
               {
                 "cells": [
-                  "2",
                   "4",
+                  "5",
                   "6"
                 ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 2,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "I have A Matrix",
-            "match": {
-              "location": "MatrixSteps.iHaveAMatrix()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-10T15:26:18.057Z",
-        "line": 17,
-        "name": "Cofactor",
-        "description": "",
-        "id": "matrix;cofactor",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2011600,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I compute cofactor of",
-            "match": {
-              "location": "MatrixSteps.iComputeCofactorOf(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "col1",
-                  "col2"
-                ]
               },
               {
                 "cells": [
-                  "1",
-                  "2"
-                ]
-              },
-              {
-                "cells": [
-                  "3",
-                  "4"
+                  "7",
+                  "8",
+                  "12"
                 ]
               }
             ],
@@ -168,129 +67,20 @@
           },
           {
             "result": {
-              "duration": 2145300,
+              "duration": 3994700,
               "status": "passed"
             },
-            "line": 22,
-            "name": "The result of cofactor is",
+            "line": 12,
+            "name": "The result of determinant is -9",
             "match": {
-              "location": "MatrixSteps.iFindAsCofactoreResult(io.cucumber.datatable.DataTable)"
+              "arguments": [
+                {
+                  "val": "-9",
+                  "offset": 29
+                }
+              ],
+              "location": "MatrixSteps.iFindAsDeterminantResult(double)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "col1",
-                  "col2"
-                ]
-              },
-              {
-                "cells": [
-                  "4",
-                  "-3"
-                ]
-              },
-              {
-                "cells": [
-                  "-2",
-                  "1"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 2,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "I have A Matrix",
-            "match": {
-              "location": "MatrixSteps.iHaveAMatrix()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-10T15:26:18.068Z",
-        "line": 29,
-        "name": "Inverse",
-        "description": "",
-        "id": "matrix;inverse",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I compute inverse of",
-            "match": {
-              "location": "MatrixSteps.iComputeInverseOf(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "col1",
-                  "col2"
-                ]
-              },
-              {
-                "cells": [
-                  "1",
-                  "2"
-                ]
-              },
-              {
-                "cells": [
-                  "3",
-                  "4"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003ccom.example.model.Matrix@2b62442c\u003e but was:\u003ccom.example.model.Matrix@66629f63\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat MatrixSteps.iFindAsInverseResult(MatrixSteps.java:126)\r\n\tat ✽.The result of inverse is(file:///E:/2CSSIL/OGL/TP6_OGL/tp/Features/matrix.feature:34)\r\n",
-              "duration": 1435100,
-              "status": "failed"
-            },
-            "line": 34,
-            "name": "The result of inverse is",
-            "match": {
-              "location": "MatrixSteps.iFindAsInverseResult(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "col1",
-                  "col2"
-                ]
-              },
-              {
-                "cells": [
-                  "-2",
-                  "1"
-                ]
-              },
-              {
-                "cells": [
-                  "1.5",
-                  "-0.5"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ]
