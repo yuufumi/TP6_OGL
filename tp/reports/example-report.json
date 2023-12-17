@@ -11,11 +11,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 999200,
-=======
-              "duration": 1999400,
->>>>>>> origin/dev2
+              "duration": 2036100,
               "status": "passed"
             },
             "line": 3,
@@ -28,32 +24,59 @@
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2023-12-10T14:33:05.708Z",
-        "line": 5,
-        "name": "Determinant",
+        "start_timestamp": "2023-12-10T15:26:18.007Z",
+        "line": 7,
+        "name": "Transpose",
         "description": "",
-        "id": "matrix;determinant",
-=======
-        "start_timestamp": "2023-12-10T14:08:21.750Z",
-        "line": 5,
-        "name": "Cofactor",
-        "description": "",
-        "id": "matrix;cofactor",
->>>>>>> origin/dev2
+        "id": "matrix;transpose",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 2767700,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I compute determinant of",
+            "line": 8,
+            "name": "I compute transpose of",
             "match": {
-              "location": "MatrixSteps.iComputeDeterminantOf(io.cucumber.datatable.DataTable)"
+              "location": "MatrixSteps.iComputeTransposeOf(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "col1",
+                  "col2"
+                ]
+              },
+              {
+                "cells": [
+                  "1",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "3",
+                  "4"
+                ]
+              },
+              {
+                "cells": [
+                  "5",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The result of transpose is",
+            "match": {
+              "location": "MatrixSteps.iFindAsTransposeResult(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
@@ -66,43 +89,18 @@
               {
                 "cells": [
                   "1",
+                  "3",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
                   "2",
-                  "3"
-                ]
-              },
-              {
-                "cells": [
                   "4",
-                  "5",
                   "6"
-                ]
-              },
-              {
-                "cells": [
-                  "7",
-                  "8",
-                  "12"
                 ]
               }
             ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3516700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The result of determinant is -9",
-            "match": {
-              "arguments": [
-                {
-                  "val": "-9",
-                  "offset": 29
-                }
-              ],
-              "location": "MatrixSteps.iFindAsDeterminantResult(double)"
-            },
             "keyword": "Then "
           }
         ]
@@ -128,32 +126,23 @@
         ]
       },
       {
-        "start_timestamp": "2023-12-10T14:33:05.772Z",
-        "line": 14,
-        "name": "Transpose",
+        "start_timestamp": "2023-12-10T15:26:18.057Z",
+        "line": 17,
+        "name": "Cofactor",
         "description": "",
-        "id": "matrix;transpose",
+        "id": "matrix;cofactor",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1000900,
+              "duration": 2011600,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I compute transpose of",
-            "match": {
-              "location": "MatrixSteps.iComputeTransposeOf(io.cucumber.datatable.DataTable)"
-=======
-              "duration": 1011800,
-              "status": "passed"
-            },
-            "line": 6,
+            "line": 18,
             "name": "I compute cofactor of",
             "match": {
               "location": "MatrixSteps.iComputeCofactorOf(io.cucumber.datatable.DataTable)"
->>>>>>> origin/dev2
             },
             "rows": [
               {
@@ -173,23 +162,16 @@
                   "3",
                   "4"
                 ]
-<<<<<<< HEAD
-              },
-              {
-                "cells": [
-                  "5",
-                  "6"
-=======
               }
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 999300,
+              "duration": 2145300,
               "status": "passed"
             },
-            "line": 10,
+            "line": 22,
             "name": "The result of cofactor is",
             "match": {
               "location": "MatrixSteps.iFindAsCofactoreResult(io.cucumber.datatable.DataTable)"
@@ -239,8 +221,8 @@
         ]
       },
       {
-        "start_timestamp": "2023-12-10T14:08:21.800Z",
-        "line": 17,
+        "start_timestamp": "2023-12-10T15:26:18.068Z",
+        "line": 29,
         "name": "Inverse",
         "description": "",
         "id": "matrix;inverse",
@@ -249,10 +231,9 @@
         "steps": [
           {
             "result": {
-              "duration": 999200,
               "status": "passed"
             },
-            "line": 18,
+            "line": 30,
             "name": "I compute inverse of",
             "match": {
               "location": "MatrixSteps.iComputeInverseOf(io.cucumber.datatable.DataTable)"
@@ -274,7 +255,6 @@
                 "cells": [
                   "3",
                   "4"
->>>>>>> origin/dev2
                 ]
               }
             ],
@@ -282,54 +262,32 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003ccom.example.model.Matrix@2b62442c\u003e but was:\u003ccom.example.model.Matrix@66629f63\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat MatrixSteps.iFindAsInverseResult(MatrixSteps.java:126)\r\n\tat ✽.The result of inverse is(file:///E:/2CSSIL/OGL/TP6_OGL/tp/Features/matrix.feature:34)\r\n",
+              "duration": 1435100,
+              "status": "failed"
             },
-<<<<<<< HEAD
-            "line": 20,
-            "name": "The result of transpose is",
-            "match": {
-              "location": "MatrixSteps.iFindAsTransposeResult(io.cucumber.datatable.DataTable)"
-=======
-            "line": 22,
+            "line": 34,
             "name": "The result of inverse is",
             "match": {
               "location": "MatrixSteps.iFindAsInverseResult(io.cucumber.datatable.DataTable)"
->>>>>>> origin/dev2
             },
             "rows": [
               {
                 "cells": [
                   "col1",
-<<<<<<< HEAD
-                  "col2",
-                  "col3"
-=======
                   "col2"
->>>>>>> origin/dev2
                 ]
               },
               {
                 "cells": [
-<<<<<<< HEAD
-                  "1",
-                  "3",
-                  "5"
-=======
                   "-2",
                   "1"
->>>>>>> origin/dev2
                 ]
               },
               {
                 "cells": [
-<<<<<<< HEAD
-                  "2",
-                  "4",
-                  "6"
-=======
                   "1.5",
                   "-0.5"
->>>>>>> origin/dev2
                 ]
               }
             ],

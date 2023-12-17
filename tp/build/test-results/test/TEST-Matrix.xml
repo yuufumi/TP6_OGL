@@ -1,19 +1,18 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Matrix" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-10T14:33:05" hostname="DESKTOP-E25QIIB" time="0.155">
+<testsuite name="Matrix" tests="3" skipped="0" failures="1" errors="0" timestamp="2023-12-10T15:26:17" hostname="DESKTOP-E25QIIB" time="0.154">
   <properties/>
-  <testcase name="Determinant" classname="Matrix" time="0.151"/>
-  <testcase name="Transpose" classname="Matrix" time="0.003"/>
+  <testcase name="Transpose" classname="Matrix" time="0.135"/>
+  <testcase name="Cofactor" classname="Matrix" time="0.013"/>
+  <testcase name="Inverse" classname="Matrix" time="0.006">
+    <failure message="java.lang.AssertionError: expected:&lt;com.example.model.Matrix@2b62442c&gt; but was:&lt;com.example.model.Matrix@66629f63&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.example.model.Matrix@2b62442c&gt; but was:&lt;com.example.model.Matrix@66629f63&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at MatrixSteps.iFindAsInverseResult(MatrixSteps.java:126)
+	at ✽.The result of inverse is(file:///E:/2CSSIL/OGL/TP6_OGL/tp/Features/matrix.feature:34)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Matrix" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-10T14:08:21" hostname="DESKTOP-4OO31M4" time="0.124">
-  <properties/>
-  <testcase name="Cofactor" classname="Matrix" time="0.121"/>
-  <testcase name="Inverse" classname="Matrix" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
->>>>>>> origin/dev2
